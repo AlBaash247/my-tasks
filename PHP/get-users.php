@@ -1,11 +1,20 @@
 <?php
+
+function getResponse(){
 // Include the database connection file
 require 'db-connection.php';
-
-// For example:
 $stmt = $connect->prepare("SELECT * FROM users");
 $stmt->execute();
 $result = $stmt->fetchAll();
 
-print_r($result);
+return $result;
+}
+
+function printResponse(){
+    
+$jsonResponse = json_encode(getResponse());
+echo $jsonResponse;
+}
+
+
 
