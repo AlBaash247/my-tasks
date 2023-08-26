@@ -1,6 +1,6 @@
 <?php
 
-function getResponse(){
+function getResonse(){
 // Include the database connection file
 require 'db-connection.php';
 
@@ -16,7 +16,7 @@ return $result;
 
 function printResponse(){
 
-$jsonResponse = json_encode(getResponse());
+$jsonResponse = json_encode(getResonse());
 echo $jsonResponse;
 
 }
