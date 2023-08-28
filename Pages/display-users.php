@@ -22,7 +22,7 @@
 function printUsers()
 {
     require '../PHP/get-users.php';
-    foreach (getResponse() as $user) {
+    foreach (getResonse() as $user) {
         echo "<h1 class='display-1'> {$user['id']}. {$user['full_name']} : {$user['email']} </h1>";
     }
 }
