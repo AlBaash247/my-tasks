@@ -1,3 +1,5 @@
+<?php require_once '../templates/display-users.template.php' ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -10,19 +12,38 @@
 
 <body>
 
-    <?php printUsers() ?>
+    <div class="container-fluid">
+        <div class="d-flex mt-5">
+            <div class="row justify-content-center w-100">
+                <div class="col-12 col-xxl-10 p-0">
 
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-light">
+                                <th scope="col" class="display-4">id</th>
+                                <th scope="col" class="display-4">Full Name</th>
+                                <th scope="col" class="display-4">Email</th>
+                                <th scope="col" class="display-4">Status</th>
+                                <th scope="col" class="display-4">Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-group-divider">
+
+                            <?php printUsers() ?>
+
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/controllers/display-users.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-<?php
-
-function printUsers()
-{
-    require '../PHP/get-users.php';
-    foreach (getResonse() as $user) {
-        echo "<h1 class='display-1'> {$user['id']}. {$user['full_name']} : {$user['email']} </h1>";
-    }
-}
