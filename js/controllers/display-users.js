@@ -1,11 +1,16 @@
+import { apiRequest_updateUserStatus } from "../interface/update-user-status.js";
+
 function activate(userId, userFullName) {
     // alert(userId + ". " + userFullName + " activated successfully!");
     activateRowHighlight(userId)
+    apiRequest_updateUserStatus(userId, "Active");
 }
 
 function disable(userId, userFullName) {
     // alert(userId + ". " + userFullName + " disabled successfully!");
     disableRowHighlight(userId)
+    apiRequest_updateUserStatus(userId, "Disabled");
+
 }
 
 function activateRowHighlight(userId) {
@@ -41,3 +46,6 @@ function disableRowHighlight(userId) {
     btnActivate.classList.remove("visually-hidden");
     btnDisable.classList.add("visually-hidden");
 }
+
+
+window.display_users_js = {activate, disable}
