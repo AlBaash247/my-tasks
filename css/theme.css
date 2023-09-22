@@ -1,0 +1,397 @@
+:root {
+    --color-primary: #4C76FD;
+    --color-secondary: #1A5666;
+    --color-extra: #79AEA3;
+    --color-accent: #F15BB5;
+    --color-accent-light: #F15BB548;
+
+    --color-priority-high: #981717;
+    --color-priority-medium: #f59e0b;
+    --color-priority-low: var(--color-extra);
+
+    /*
+   #5B2E48
+   #F4E480
+   #6F9398
+
+   #981717
+   
+      */
+}
+
+
+
+.txtPrimary {
+    color: var(--color-primary);
+}
+
+
+.txtSecondary {
+    color: var(--color-secondary);
+}
+
+.txtExtra {
+    color: var(--color-extra);
+}
+
+.txtAccent {
+    color: var(--color-accent);
+}
+
+
+.bgPrimary {
+    background-color: var(--color-primary);
+}
+
+
+.bgSecondary {
+    background-color: var(--color-secondary);
+}
+
+.bgExtra {
+    background-color: var(--color-extra);
+}
+
+.bgAccent {
+    background-color: var(--color-accent);
+}
+
+.fullHighetContainer {
+    height: 100vh;
+    height: 100dvh;
+
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.circular_image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--color-primary);
+}
+
+
+.circular_image img {
+    width: 100%;
+}
+
+.burgerMenu {
+    rotate: 90deg;
+}
+
+.myBtn {
+    background-color: var(--color-secondary);
+}
+
+.myBtn:hover {
+    background-color: var(--color-primary)
+}
+
+.myBtnPrimary {
+    color: #FFF;
+    background-color: var(--color-primary);
+}
+
+.myBtnPrimary:hover {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.myBtnAccent {
+    color: #FFF;
+    background-color: var(--color-accent);
+}
+
+.myBtnAccent:hover {
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+
+.myBtnStatusTodo {
+    width: 123px;
+    color: #FFF;
+    background-color: var(--color-secondary);
+}
+
+.myBtnStatusTodo:hover, .myBtnStatusTodo_Disabled {
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+
+.myBtnStatusInProgress {
+    width: 123px;
+    color: #FFF;
+    background-color: var(--color-accent);
+}
+
+.myBtnStatusInProgress:hover, .myBtnStatusInProgress_Disabled {
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+
+.myBtnStatusDone {
+    width: 123px;
+    color: #FFF;
+    background-color: var(--color-primary);
+}
+
+.myBtnStatusDone:hover, .myBtnStatusDone_Disabled {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+
+
+.myBtnPriorityHigh {
+    color: #FFF;
+    background-color: var(--color-priority-high);
+}
+
+.myBtnPriorityHigh:hover, .myBtnPriorityHigh_Disabled {
+    color: var(--color-priority-high);
+    border: 1px solid var(--color-priority-high);
+}
+
+
+.myBtnPriorityMedium {
+    color: #FFF;
+    background-color: var(--color-priority-medium);
+}
+
+.myBtnPriorityMedium:hover, .myBtnPriorityMedium_Disabled {
+    color: var(--color-priority-medium);
+    border: 1px solid var(--color-priority-medium);
+}
+
+
+.myBtnPriorityLow {
+    color: #FFF;
+    background-color: var(--color-priority-low);
+}
+
+.myBtnPriorityLow:hover, .myBtnPriorityLow_Disabled {
+    color: var(--color-priority-low);
+    border: 1px solid var(--color-priority-low);
+}
+
+.myBtnSmall {
+    height: 38px;
+    width: 38px;
+}
+
+.myBtnFilter {
+    height: 38px;
+    width: 56px;
+}
+
+.myBtnPriority {
+    width: 90px;
+}
+
+.topControlPanalItems {
+    height: 38px;
+}
+
+.verticalLine {
+    border-left: 1px solid var(--color-secondary);
+    height: 38px;
+}
+
+
+.myCardPrimary {
+    color: var(--color-primary);
+    border-left: 6px solid var(--color-primary);
+}
+
+.myCardSecondry {
+    color: var(--color-secondary);
+    border-left: 6px solid var(--color-secondary);
+}
+
+.myCardExtra {
+    color: var(--color-extra);
+    border-left: 6px solid var(--color-extra);
+}
+
+.myCardAccent {
+    color: var(--color-accent);
+    border-left: 6px solid var(--color-accent);
+}
+
+.myCardPriorityHigh {
+    color: var(--color-priority-high);
+    border-left: 6px solid var(--color-priority-high);
+}
+
+#btnAddTask {
+    min-width: 124px;
+}
+
+#inputSearchGroup {
+    max-width: 400px;
+}
+
+
+.taskDueDate {
+    min-width: 156px;
+}
+
+.taskTitle {
+    min-width: 224px;
+    max-width: 424px;
+}
+
+
+.overflowXAuto {}
+
+
+#btnDisplayAllSpacesDueToday, #btnDisplayCurrentSpaceDueToday,
+#btnDisplyAllSpacesHighPriority, #btnDisplyCurrentSpacesHighPriority {
+    height: 100%;
+}
+
+
+.myAddTaskSelect {
+    height: 58px;
+}
+
+.myAddTaskDesc {
+    max-height: 200px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* ######## Adjest Design to Screen Size ######## */
+
+
+/* Extra small < 576px
+Small ≥ 576px
+Medium ≥ 768px
+Large ≥ 992px
+X-Large ≥ 1200px
+XX-Large ≥ 1400px */
+
+
+
+/* for small screens */
+@media screen and (max-width: 760px) {
+
+    #btnMentions, #btnAssignedToMe, #verticalLine {
+        display: none;
+    }
+
+    #inputSearchGroup {
+        width: 90%;
+    }
+
+    #btnProfileGroup {
+        margin-right: 12px;
+    }
+
+    .mySummaryCard {
+        height: 350px;
+        border-radius: 8px;
+    }
+
+    .btnPaginationText_sm {
+        display: block;
+    }
+
+    .btnPaginationText_lg {
+        display: none;
+    }
+
+    #btnCredits {
+        margin-left: 0px;
+    }
+
+
+
+}
+
+/* for small screens */
+
+
+/* for medium screens */
+@media screen and (min-width: 761px) {
+
+    #btnProfileGroup {
+        margin-right: 24px;
+    }
+
+    .mySummaryCard {
+        height: 212px;
+        border-radius: 8px;
+    }
+
+    .labelProgressbarContainer {
+        display: flex;
+    }
+
+
+    .labelProgressbarChild1 {
+        width: 30%;
+    }
+
+
+    .labelProgressbarChild2 {
+        width: 70%;
+    }
+
+    #btnCredits {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+}
+
+/* for medium screens */
+
+
+
+@media screen and (min-width: 1400px) and (max-width: 2020px) {
+
+    .mySummaryCard {
+        height: 224px;
+        border-radius: 8px;
+    }
+
+
+    .labelProgressbarContainer {
+        display: flex;
+    }
+
+    .labelProgressbarChild1 {
+        width: 50%;
+    }
+
+
+    .labelProgressbarChild2 {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 1124px) {
+    .overflowXAuto {
+        overflow-x: auto;
+        overflow-y: auto;
+
+    }
+
+    .topSectionContainer {
+        height: 300px;
+    }
+
+    .btn {
+        height: 50px;
+    }
+}
